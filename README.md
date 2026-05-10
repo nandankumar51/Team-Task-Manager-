@@ -38,6 +38,32 @@ https://teamtaskmanager-production-d5f9.up.railway.app/login?next=%2Fdashboard
 
 ## Screenshots
 
+### Login  
+![Login](./images/Login.png)
+
+### Admin Dashboard 
+![Admin Dashboard](./images/AdminDashboard.png)
+
+### Admin Projects 
+![Admin Projects](./images/AdminProjects.png)
+
+### Admin Project
+![Member Project](./images/ProductLaunchProjectAdmin.png)
+
+### Admin New Task
+![Admin New Task](./images/AdminNewTask.png)
+
+### Admin Tasks 
+![Admin Tasks](./images/AdminTasks.png)
+
+### Member Dashboard
+![Member Dashboard](./images/MemberDashboard.png)
+
+### Member Projects
+![Member Projects](./images/MemberProjects.png)
+
+### Member Tasks
+![Member Tasks](./images/MemberTasks.png)
 
 ## Demo Video
 
