@@ -65,7 +65,6 @@ https://teamtaskmanager-production-d5f9.up.railway.app/login?next=%2Fdashboard
 ### Member Tasks
 ![Member Tasks](./images/MemberTasks.png)
 
-## Demo Video
 
 ## Demo Credentials
 
