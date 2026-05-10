@@ -2,9 +2,13 @@
 
 A production-ready full-stack task management app for creating projects, managing team members, assigning tasks, and tracking delivery progress with Admin and Member role-based access control.
 
+
+## Live Demo
+https://teamtaskmanager-production-d5f9.up.railway.app/login?next=%2Fdashboard
+
 ## Features
 
-- Email/password signup, login, logout, and persistent HTTP-only cookie sessions
+- Email/password signup, login, logout
 - Admin/Member account type selection on signup and login
 - Password hashing with `bcrypt`
 - Admin and Member role-based access control in both UI and API routes
@@ -12,9 +16,9 @@ A production-ready full-stack task management app for creating projects, managin
 - Email-based member invitations with automatic workspace/project joining on signup
 - Project CRUD for admins
 - Project membership management for admins
-- Task creation, assignment, filtering, status updates, and deletion
+- Task creation, assignment, filtering, status tracking, and deletion
 - Member-only views for joined projects and assigned tasks
-- Dashboard analytics for task status counts, overdue work, recent tasks, and project totals
+- Dashboard analytics for task status counts, overdue work, recent tasks, and project statistics
 - Zod validation for all API request bodies
 - Prisma relationships and cascading behavior
 - Railway-ready PostgreSQL deployment
@@ -31,15 +35,11 @@ A production-ready full-stack task management app for creating projects, managin
 - `zod` request validation
 - Clean Tailwind dashboard components
 
+
 ## Screenshots
 
-Add screenshots after deployment:
 
-- Dashboard
-- Projects list
-- Project detail with members and tasks
-- Task filters and assignment modal
-- Member task status update
+## Demo Video
 
 ## Demo Credentials
 
@@ -52,6 +52,7 @@ Seeded users are optional demo data only:
 | Member | `alex@example.com` | `Alex123!` |
 
 Signup and login both include an Admin/Member selector. New Admin signups create a fresh workspace. New Member signups join an admin workspace through a pending invite or by entering the workspace admin's email. Admins can view workspace users on the Profile screen and then add members to projects or assign tasks.
+
 
 ## Local Setup
 
@@ -94,7 +95,6 @@ npm run prisma:seed
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
 
 ## Supabase Database Setup
 
@@ -234,24 +234,10 @@ npm run prisma:seed
 
 Do not run seed automatically on every deploy because it resets demo data.
 
-## Demo Video Guide
 
-Record a 2-5 minute walkthrough covering:
+## Future Enhancements
 
-1. Create a new account from `/signup`; it becomes an admin workspace.
-2. Use the Admin/Member selector on signup and login.
-3. Create a project from `/projects`.
-4. Open the project and invite a member by email, or sign up as Member with the admin email.
-5. Show the new member in the admin Profile workspace members list.
-6. Create and assign a task as the admin.
-7. Log in as the member and show only joined projects and assigned tasks.
-8. Update a task status as the member.
-9. Mention that backend API routes enforce workspace isolation and RBAC.
-
-## Known Limitations
-
-- A user belongs to one workspace at a time.
-- There is no email verification or password reset flow.
-- Real invitation email delivery requires Resend environment variables.
-- The UI uses table/list views rather than a drag-and-drop Kanban board.
-- Live URL, GitHub repository URL, screenshots, and demo video should be added after deployment.
+- A user may belongs to one workspace at a time.
+- Email verification or password reset flow.
+- Real invitation email delivery should not require Resend environment variables.
+- The UI should use a drag-and-drop Kanban board.
